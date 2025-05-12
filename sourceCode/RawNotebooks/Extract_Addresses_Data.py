@@ -20,7 +20,7 @@ spark.conf.set(
 
 # MAGIC %sql
 # MAGIC SELECT * 
-# MAGIC   FROM read_files('wasbs://dlgizmobox@sagizmobox.blob.core.windows.net/landing/operational_data/addresses/',
+# MAGIC   FROM read_files('wasbs://oldcontainer@account.blob.core.windows.net',
 # MAGIC                   format => 'csv',
 # MAGIC                   delimiter => '\t',
 # MAGIC                   header => true);
